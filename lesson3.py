@@ -16,8 +16,18 @@ class Human:
     def __run(self):
         print(f'{self.__name} is running')
 
-h=Human('Азирет', 20)
+    @property
+    def prin(self):
+        return self.__name
+    @prin.setter
+    def prin(self,name):
+        self.__name=name
 
+
+h=Human('Азирет', 20)
+print(h.prin)
+h.prin='j'
+print(h.prin)
 
 
 
