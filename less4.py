@@ -54,19 +54,19 @@ class People:
         self.name=name
         self.age=age
 
-    def run(self):
-        print(self.name,'run')
+    # def run(self):
+    #     print(self.name,'run')
     def __str__(self):
         return f'{self.name} {self.age}'
-class Run:
-    def run(self):
-        print('run')
+class Run:...
+    # def run(self):
+    #     print('run')
 class Name:
     def names(self):
         print(self)
 
-    def run(self):
-        print('Name')
+    # def run(self):
+    #     print('Name')
 class Robot:
     def __init__(self,model):
         self.model=model
@@ -76,7 +76,7 @@ class Robot:
     def __str__(self):
         return self.model
 
-
+# MRO
 class Human(People,Run,Name,Robot):
     def __init__(self, name, age,model):
         People.__init__(self,name, age)
@@ -89,5 +89,4 @@ human=Human('Нурислам',45,'A$')
 # human.run()
 # human.names()
 # print(human)
-print(human)
 human.run()
