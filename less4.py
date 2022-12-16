@@ -89,4 +89,9 @@ human=Human('Нурислам',45,'A$')
 # human.run()
 # human.names()
 # print(human)
-human.run()
+# human.run()
+
+a=111
+
+def r(a):
+    print(a*2)
